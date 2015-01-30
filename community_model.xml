@@ -1,0 +1,13 @@
+<model>
+	<states>
+		<state id="S"/>
+		<state id="I" />
+		<state id="R" />
+		<state id="Z" />
+	</states>
+	<edges>
+		<edge source = "S" target = "I" rule = "community" transition = "probability 0.5" />
+		<edge source = "I" target = "R" rule = "community" transition = "percentage 40" />
+		<edge source = "R" target = "Z" rule = "community" transition = "number 2" />
+	</edges>
+</model>

@@ -1,0 +1,9 @@
+<model>
+	<states>
+		<state id="S"/>
+		<state id="I" />
+	</states>
+	<edges>
+		<edge source = "S" target = "I" rule = "neighborhood" transition = "probability 0.1" />
+	</edges>
+</model>
